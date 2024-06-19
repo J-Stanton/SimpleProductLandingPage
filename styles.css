@@ -14,9 +14,12 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-#header-logo {
+#header-img {
     max-width: 100px;
 }
 
@@ -128,4 +131,37 @@ form {
 #submit:hover {
     background-color: #e07b00;
     color: white;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    #title {
+        font-size: 2em;
+    }
+
+    .nav-link {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    #exchanges {
+        flex-direction: column;
+    }
+
+    #exchanges div {
+        margin-bottom: 20px;
+    }
+
+    #exchanges img {
+        max-width: 100px;
+    }
+
+    #exchanges button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
 }
