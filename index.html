@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <img id="header-logo" src="bitcoin.jpg">
+        <h1 id="title">Buy Bitcoin Today!</h1>
+        <nav id="nav-bar">
+            <a href="#binance" class="nav-link">Why Buy</a>
+            <a href="#coinbase" class="nav-link">Exchanges</a>
+            <a href="#okx" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <section id="why">
+        <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/Cw29h7LhEuE?si=_GKbScLiso4CTWzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section id="exchanges">
+        <div id="binance">
+            <img src="binance.jpg">
+            <button>Visit Binance</button>
+        </div>
+        <div id="coinbase">
+            <img src="coinbase.jpg">
+            <button>Visit Coinbase</button>
+        </div>
+        <div id="okx">
+            <img src="okx.png">
+            <button>Visit OKX</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <a href="https://bitcoin.org/en/">Bitcoin.org</a>
+    </section>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit" methods="post">
+        <input id="email" type="email" placeholder="Enter your email here!" required>
+        <input id="submit" type="submit">
+    </form>
+</body>
+</html>
